@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c4ef4da-a0eb-4f70-a072-e656bd15af3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-admin-back.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test-admin-front/src/components/common/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin-front/src/components/common/Login.vue" afterDir="false" />
-    </list>
+    <list default="true" id="2c4ef4da-a0eb-4f70-a072-e656bd15af3b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +84,7 @@
       <updated>1620524823049</updated>
       <workItem from="1620524827747" duration="2469000" />
       <workItem from="1620781074380" duration="1543000" />
-      <workItem from="1620836078767" duration="636000" />
+      <workItem from="1620836078767" duration="643000" />
     </task>
     <servers />
   </component>

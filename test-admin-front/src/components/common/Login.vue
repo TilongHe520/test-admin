@@ -84,7 +84,9 @@
         methods: {
             // 提交表单
             dataFormSubmit() {
-                if (this.ruleForm.verifycode.toLowerCase() !== this.identifyCode.toLowerCase()) {
+                if(this.dataForm.userName===""|| this.dataForm.password === ""){
+                    this.$message.error('用户名密码不能为空')
+                }else if (this.ruleForm.verifycode.toLowerCase() !== this.identifyCode.toLowerCase()) {
                     this.$message.error('请填写正确验证码')
                     this.refreshCode()
                     return
