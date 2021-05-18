@@ -2,12 +2,17 @@ package com.admin.controller;
 
 import com.admin.common.CommonResult;
 import com.admin.pojo.UserInfo;
+import com.admin.service.UserService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @Slf4j
 public class LoginController {
+
+    @Autowired
+    private UserService userService;
 
     @RequestMapping(value = "/api/login", method = RequestMethod.POST)
     @CrossOrigin
@@ -21,5 +26,10 @@ public class LoginController {
             return CommonResult.validateFailed("用户名或密码错误");
         }
 
+    }
+
+    @GetMapping(value = "/find")
+    public String find(){
+        return userService.findByUsername("hetilong").toString();
     }
 }
