@@ -18,18 +18,20 @@ public class LoginController {
     @CrossOrigin
     public CommonResult login(@RequestBody UserInfo user) {
 
-        if (user.getUserName().equals("admin") && user.getPassword().equals("123456")) {
-            log.info(user.toString());
-            return CommonResult.success(user, "登录成功");
-        } else{
+        UserInfo userInfo = userService.findByUsername(user.getUserName());
+        if(null != userInfo){
+            if (user.getPassword().equals(userInfo.getPassword())) {
+                log.info(user.toString());
+                return CommonResult.success(user, "登录成功");
+            } else{
+                log.error(user.toString());
+                return CommonResult.validateFailed("用户名或密码错误");
+            }
+        }else {
             log.error(user.toString());
-            return CommonResult.validateFailed("用户名或密码错误");
+            return CommonResult.failed("用户不存在");
         }
 
     }
 
-    @GetMapping(value = "/find")
-    public String find(){
-        return userService.findByUsername("hetilong").toString();
-    }
 }
