@@ -3,8 +3,8 @@
         <!-- 系统 Logo -->
         <el-aside class="header-logo" :width="asideWidth">
             <div @click="$router.push({ name: 'Home' })">
-                <a v-if="foldAside">后台管理中心</a>
-                <a v-else>后台</a>
+                <a v-if="foldAside">TEST ADMIN</a>
+                <a v-else>TEST</a>
             </div>
         </el-aside>
         <el-aside class="aside" :width="asideWidth" :class='"icon-size-" + iconSize'>
@@ -25,7 +25,7 @@
                     <el-submenu index="demo">
                         <template slot="title">
                             <i class="el-icon-star-off"></i>
-                            <span>demo</span>
+                            <span>接口管理</span>
                         </template>
                         <el-menu-item index="demo-echarts" @click="$router.push({ name: 'Echarts' })">
                             <i class="el-icon-s-data"></i>
