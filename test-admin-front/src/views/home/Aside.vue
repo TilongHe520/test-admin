@@ -36,6 +36,22 @@
                             <span slot="title">ueditor</span>
                         </el-menu-item>
                     </el-submenu>
+                    <el-menu-item index="ui" @click="$router.push({ name: 'UITest' })">
+                        <i class="el-icon-s-home"></i>
+                        <span slot="title">UI测试</span>
+                    </el-menu-item>
+                    <el-menu-item index="stress">
+                        <i class="el-icon-s-home"></i>
+                        <span slot="title">压力测试</span>
+                    </el-menu-item>
+                    <el-menu-item index="case">
+                        <i class="el-icon-s-home"></i>
+                        <span slot="title">用例管理</span>
+                    </el-menu-item>
+                    <el-menu-item index="till">
+                        <i class="el-icon-s-home"></i>
+                        <span slot="title">实用小工具</span>
+                    </el-menu-item>
                 </el-menu>
             </el-scrollbar>
         </el-aside>

@@ -42,6 +42,11 @@ const routes = [
                 path: '/Home/Demo/Ueditor',
                 name: 'Ueditor',
                 component: () => import('@/views/menu/Ueditor.vue')
+            },
+            {
+                path: '/Home/UItest',
+                name: 'UITest',
+                component: ()=> import('@/views/menu/UITest.vue')
             }
         ]
     },
