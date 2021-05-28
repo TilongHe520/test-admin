@@ -1,6 +1,7 @@
 package com.admin.controller;
 
 import com.admin.common.CommonResult;
+import com.admin.pojo.UITestInfo;
 import com.admin.pojo.UserInfo;
 import com.admin.service.UserService;
 import lombok.extern.slf4j.Slf4j;
@@ -32,6 +33,13 @@ public class LoginController {
             return CommonResult.failed("用户不存在");
         }
 
+    }
+
+    @RequestMapping(value = "/api/uitest", method = RequestMethod.POST)
+    @CrossOrigin
+    public CommonResult getUIInfo(@RequestBody UITestInfo uiTestInfo){
+        System.out.println(uiTestInfo.toString());
+        return CommonResult.success(uiTestInfo);
     }
 
 }

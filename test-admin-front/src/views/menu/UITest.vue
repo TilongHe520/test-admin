@@ -14,6 +14,7 @@
                 </el-input>
             </el-form-item>
             <el-form-item>
+                <el-button @click="demo()">重置</el-button>
                 <el-button class="login-btn-submit"
                  type="primary"
                  @click="UIDataFormSubmit()">提交</el-button>
@@ -43,11 +44,15 @@
                         xpath: this.UIDataForm.xpath
                     }).then(successResponse =>{
                         if (successResponse.data.code === 200) {
+                            this.demo(),
                             this.$router.replace({name: 'Home'})
                         }
                     }).catch(failResponse => {
                     })
                 }
+            },
+            demo(){
+                Object.assign(this.$data, this.$options.data())
             }
         }
     }
