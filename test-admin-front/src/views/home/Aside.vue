@@ -40,7 +40,7 @@
                         <i class="el-icon-s-home"></i>
                         <span slot="title">UI测试</span>
                     </el-menu-item>
-                    <el-menu-item index="stress">
+                    <el-menu-item index="stress" @click="$router.push({name:'Stress'})">
                         <i class="el-icon-s-home"></i>
                         <span slot="title">压力测试</span>
                     </el-menu-item>

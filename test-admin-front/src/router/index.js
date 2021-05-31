@@ -47,6 +47,11 @@ const routes = [
                 path: '/Home/UItest',
                 name: 'UITest',
                 component: ()=> import('@/views/menu/UITest.vue')
+            },
+            {
+                path: '/Home/Stress',
+                name: 'Stress',
+                component: ()=> import('@/views/menu/Stress.vue')
             }
         ]
     },

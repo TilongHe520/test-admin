@@ -1,6 +1,7 @@
 package com.admin.controller;
 
 import com.admin.common.CommonResult;
+import com.admin.pojo.StressVO;
 import com.admin.pojo.UITestInfo;
 import com.admin.pojo.UserInfo;
 import com.admin.service.UserService;
@@ -40,6 +41,13 @@ public class LoginController {
     public CommonResult getUIInfo(@RequestBody UITestInfo uiTestInfo){
         System.out.println(uiTestInfo.toString());
         return CommonResult.success(uiTestInfo);
+    }
+
+    @RequestMapping(value = "/api/stress", method = RequestMethod.POST)
+    @CrossOrigin
+    public CommonResult getStressInfo(@RequestBody StressVO stressVO){
+        System.out.println(stressVO.toString());
+        return CommonResult.success(stressVO);
     }
 
 }
