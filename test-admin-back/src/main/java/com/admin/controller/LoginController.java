@@ -9,6 +9,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @RestController
 @Slf4j
 public class LoginController {
@@ -50,4 +53,14 @@ public class LoginController {
         return CommonResult.success(stressVO);
     }
 
+    @RequestMapping(value = "/api/user/userList")
+    @CrossOrigin
+    public CommonResult getUserInfo(){
+        List<UserInfo> userInfos = new ArrayList<>();
+        userInfos.add(new UserInfo("xiaowang1","123456"));
+        userInfos.add(new UserInfo("xiaowang2","123456"));
+        userInfos.add(new UserInfo("xiaowang3","123456"));
+        userInfos.add(new UserInfo("xiaowang4","123456"));
+        return CommonResult.success(userInfos);
+    }
 }

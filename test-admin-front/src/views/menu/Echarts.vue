@@ -1,153 +1,194 @@
 <template>
-  <div class="tableDate">
-    <div class="button" style="width:3%;float:right;">
-      <P><el-button class="el-icon-plus" @click.prevent="addRow()"></el-button></P>
-      <p><el-button class="el-icon-minus" @click.prevent="delData()"></el-button></p>
+    <div>
+        <!--工具条-->
+        <el-col :span="24" class="toolbar" style="padding-bottom: 0px;">
+            <el-form :inline="true" :model="filters">
+                <el-form-item>
+                    <el-input v-model="filters.name" placeholder="姓名"></el-input>
+                </el-form-item>
+                <el-form-item>
+                    <el-button type="primary" v-on:click="getUsers">查询</el-button>
+                </el-form-item>
+                <el-form-item>
+                    <el-button type="info" @click="addUser">新增</el-button>
+                </el-form-item>
+            </el-form>
+        </el-col>
+
+
+        <el-table :data="userInfoList" style="width: 100%">
+            <el-table-column prop="userName" label="名字" width="180">
+            </el-table-column>
+            <el-table-column prop="password" label="密码" width="180">
+            </el-table-column>
+            <!--第二步  开始进行修改和查询操作-->
+            <el-table-column label="操作" align="center" min-width="100">
+
+                <template slot-scope="scope">
+
+                    <el-button type="text" @click="checkDetail(scope.row)">查看详情</el-button>
+
+                    <el-button type="info" @click="modifyUser(scope.row)">修改</el-button>
+
+                    <el-button type="info" @click="deleteUser(scope.row)">删除</el-button>
+                </template>
+            </el-table-column>
+            <!--编辑与增加的页面-->
+
+
+        </el-table>
+        <!--新增界面-->
+        <el-dialog title="记录" :visible.sync="dialogVisible" width="50%" :close-on-click-modal="false">
+            <el-form :model="addFormData" :rules="rules2" ref="addFormData" label-width="0px" class="demo-ruleForm login-container">
+                <el-form-item prop="userName">
+                    <el-input type="text" v-model="addFormData.userName" auto-complete="off" placeholder="账号"></el-input>
+                </el-form-item>
+                <el-form-item prop="password">
+                    <el-input type="password" v-model="addFormData.password" auto-complete="off" placeholder="密码"></el-input>
+                </el-form-item>
+            </el-form>
+            <span slot="footer" class="dialog-footer">
+                <el-button @click.native="dialogVisible = false,addFormData={userName:'',password:''}">取 消</el-button>
+                <el-button v-if="isView" type="primary" @click.native="addSubmit">确 定</el-button>
+            </span>
+        </el-dialog>
     </div>
-    <div class="table">
-      <el-table
-        :data="tableData"
-        ref="table"
-        tooltip-effect="dark"
-        border
-        stripe
-        style="width: 95%"
-        @selection-change='selectRow'>
-        <el-table-column type="selection" width="45" align="center"></el-table-column>
-        <el-table-column label="序号"  type="index" width="60" align="center"></el-table-column>
-        <el-table-column  label="地址" align="center">
-          <template slot-scope="scope">
-              <el-input v-model="scope.row.address"></el-input>
-          </template>
-        </el-table-column>
-        <el-table-column label="男猪脚">
-          <template slot-scope="scope">
-            <el-input v-model="scope.row.name"></el-input>
-          </template>
-        </el-table-column>
-        <el-table-column label="女猪脚">
-          <template slot-scope="scope">
-            <el-input v-model="scope.row.loveer"></el-input>
-          </template>
-        </el-table-column>
-        <el-table-column prop="name" label="天气">
-          <template slot-scope="scope">
-            <el-input v-model="scope.row.weather"></el-input>
-          </template>
-        </el-table-column>
-        <el-table-column label="电话">
-          <template slot-scope="scope">
-            <el-input v-model="scope.row.phone"></el-input>
-          </template>
-        </el-table-column>
-        <el-table-column label="牵手日">
-          <template slot-scope="scope">
-            <el-input v-model="scope.row.date"></el-input>
-          </template>
-        </el-table-column>
-        <el-table-column label="纪念日">
-          <template slot-scope="scope">
-            <el-input v-model="scope.row.mdate"></el-input>
-          </template>
-        </el-table-column>
-      </el-table>
-    </div>
-  </div>
+
 </template>
- 
 
 <script>
- 
-  export default {
-    data () {
-      return {
-        tableData: [{
-          rowNum: 1,
-          address: '西安城墙',
-          name: '小哥',
-          weather: '下雪',
-          phone: '0771-5201314',
-          date: '2016-11-22',
-          mdate: '2018-04-10',
-          loveer: '甜甜圈'
-        }, {
-          rowNum: 2,
-          address: '西安城墙',
-          name: '小哥',
-          weather: '下雪',
-          phone: '0771-5201314',
-          date: '2016-11-22',
-          mdate: '2018-04-10',
-          loveer: '甜甜圈'
-        }, {
-          rowNum: 3,
-          address: '西安城墙',
-          name: '小哥',
-          weather: '下雪',
-          phone: '0771-5201314',
-          date: '2016-11-22',
-          mdate: '2018-04-10',
-          loveer: '甜甜圈'
-        }, {
-          rowNum: 4,
-          address: '西安城墙',
-          name: '小哥',
-          weather: '下雪',
-          phone: '0771-5201314',
-          date: '2016-11-22',
-          mdate: '2018-04-10',
-          loveer: '甜甜圈'
-        }, {
-          rowNum: 5,
-          address: '西安城墙',
-          name: '小哥',
-          weather: '下雪',
-          phone: '0771-5201314',
-          date: '2016-11-22',
-          mdate: '2018-04-10',
-          loveer: '甜甜圈'
-        }],
-        selectlistRow: []
-      }
-    },
-    methods: {
-      // 获取表格选中时的数据
-      selectRow (val) {
-        this.selectlistRow = val
-      },
-      // 增加行
-      addRow () {
-        var list = {
-          rowNum: '',
-          address: this.address,
-          name: this.name,
-          weather: this.weather,
-          phone: this.phone,
-          date: this.date,
-          mdate: this.mdate,
-          loveer: this.loveer}
-        this.tableData.unshift(list)
-      },
-      // 删除方法
-      // 删除选中行
-      delData () {
-        for (let i = 0; i < this.selectlistRow.length; i++) {
-          let val = this.selectlistRow
-          // 获取选中行的索引的方法
-          // 遍历表格中tableData数据和选中的val数据，比较它们的rowNum,相等则输出选中行的索引
-          // rowNum的作用主要是为了让每一行有一个唯一的数据，方便比较，可以根据个人的开发需求从后台传入特定的数据
-          val.forEach((val, index) => {
-            this.tableData.forEach((v, i) => {
-              if (val.rowNum === v.rowNum) {
-                // i 为选中的索引
-                this.tableData.splice(i, 1)
-              }
-            })
-          })
+    
+    import axios from 'axios';
+    import qs from 'qs';
+    export default {
+        name: 'Echarts',
+        data() {
+            return {
+                userInfoList: [],
+                addFormReadOnly: true,
+                dialogVisible: false,
+                isView: true,
+                addFormData: {
+                    userName: '',
+                    password: ''
+                },
+                rules2: {
+                    userName: [{
+                        required: true,
+                        message: '用户名不能为空',
+                        trigger: 'blur'
+                    }],
+                    password: [{
+                        required: true,
+                        message: '密码不能为空',
+                        trigger: 'blur'
+                    }]
+                },
+                filters: {
+                    name: ''
+                }
+            }
+        },
+        mounted: function () {
+            this.loadData();
+        },
+
+        methods: {
+            loadData() {
+                axios.get('/user/userList').then(response=>{
+                    this.userInfoList = response.data.data;
+                    console.log(JSON.stringify(response.data.data));
+                });
+            },
+            getUsers() {
+                this.loadData();
+            },
+            addUser() {
+                this.addFormData = {
+                    userName: '',
+                    password: ''
+                };
+                this.isView = true;
+                this.dialogVisible = true;
+                //    this.addFormReadOnly = false;
+            },
+            checkDetail(rowData) {
+                this.addFormData = Object.assign({}, rowData);
+                this.isView = false;
+                this.dialogVisible = true;
+
+                //    this.addFormReadOnly = true;
+            },
+            modifyUser(rowData) {
+                this.addFormData = Object.assign({}, rowData);
+                this.isView = true;
+                this.dialogVisible = true;
+                //    this.addFormReadOnly = false;
+            },
+            deleteUser(rowData) {
+
+                this.$alert('是否删除这条记录', '信息删除', {
+                    confirmButtonText: '确定',
+                    callback: action => {
+                        var params = {
+                            userId: rowData.cId
+                        };
+                        axios.post("/user/delete", qs.stringify(params)).then((result) => {
+                            console.info(result);
+                            if (result.data.success) {
+                                this.$message({
+                                    type: 'info',
+                                    message: `已删除`
+                                });
+                            } else {
+                                this.$message({
+                                    type: 'info',
+                                    message: `删除失败`
+                                });
+
+                            }
+                            this.loadData();
+                        });
+
+                    }
+                });
+
+            },
+            //增加一条记录
+            addSubmit() {
+
+                //先判断表单是否通过了判断
+                this.$refs.addFormData.validate((valid) => {
+                    //代表通过验证 ,将参数传回后台
+                    if (valid) {
+                        let param = Object.assign({}, this.addFormData);
+                        axios.post("/user/submit", qs.stringify(param)).then((result) => {
+                            if (result.data.success) {
+                                this.$message({
+                                    type: 'info',
+                                    message: '添加成功',
+                                });
+                                this.loadData();
+                            } else {
+                                this.$message({
+                                    type: 'info',
+                                    message: '添加失败',
+                                });
+                            }
+                            this.dialogVisible = false;
+                        });
+                    }
+
+                });
+            }
+
         }
-        // 删除完数据之后清除勾选框
-        this.$refs.tableData.clearSelection()
-      }
+
     }
-  }
 </script>
+
+<style>
+    body {
+        background: #DFE9FB;
+    }
+</style>
