@@ -2,12 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c4ef4da-a0eb-4f70-a072-e656bd15af3b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/admin/controller/RequestParamsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/admin/mapper/RequestParamsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/admin/pojo/RequestParamsInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/admin/pojo/RequestURLInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/admin/service/RequestParamsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/RequestParamsMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/admin/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/admin/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/admin/pojo/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/admin/pojo/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/admin/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/admin/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/admin/pojo/Stress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/admin/pojo/Stress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/admin/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/admin/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/admin/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/admin/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/admin/pojo/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/admin/pojo/UserInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/admin/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/admin/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/admin/pojo/Stress.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/admin/pojo/Stress.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/admin/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/admin/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin-front/src/views/home/Aside.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin-front/src/views/home/Aside.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test-admin-front/src/views/menu/Echarts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin-front/src/views/menu/Echarts.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin-front/src/views/menu/Stress.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin-front/src/views/menu/Stress.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin-front/src/views/menu/UITest.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin-front/src/views/menu/UITest.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,11 +65,16 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/mapper" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\develop\test-admin\test-admin-back\src\main\resources\mapper" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -111,6 +133,11 @@
       <workItem from="1622507376373" duration="618000" />
       <workItem from="1622594088296" duration="475000" />
       <workItem from="1623886980821" duration="1455000" />
+      <workItem from="1623945431365" duration="789000" />
+      <workItem from="1623976992762" duration="1143000" />
+      <workItem from="1624764416202" duration="1732000" />
+      <workItem from="1627705574396" duration="747000" />
+      <workItem from="1627787081594" duration="7053000" />
     </task>
     <servers />
   </component>

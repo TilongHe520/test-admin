@@ -29,7 +29,7 @@
                         </template>
                         <el-menu-item index="demo-echarts" @click="$router.push({ name: 'Echarts' })">
                             <i class="el-icon-s-data"></i>
-                            <span slot="title">echarts</span>
+                            <span slot="title">接口列表</span>
                         </el-menu-item>
                         <el-menu-item index="demo-ueditor" @click="$router.push({ name: 'Ueditor' })">
                             <i class="el-icon-document"></i>

@@ -6,4 +6,8 @@
         select username,password from user where username = #{username}
     </select>
 
+    <select id="findAll" resultType="com.admin.pojo.UserInfo">
+        select username,password from user
+    </select>
+
 </mapper>

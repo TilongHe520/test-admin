@@ -6,10 +6,12 @@
         @keyup.enter.native="UIDataFormSubmit()"
         status-icon="">
             <el-form-item prop="description">
+                <span>ui描述:</span>
                 <el-input v-model="UIDataForm.description"
                 placeholder="ui描述"></el-input>
             </el-form-item>
             <el-form-item prop="xpath">
+                <span></span>
                 <el-input v-model="UIDataForm.xpath" placeholder="XPATH">
                 </el-input>
             </el-form-item>

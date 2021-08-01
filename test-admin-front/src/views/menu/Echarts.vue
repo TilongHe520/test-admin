@@ -31,6 +31,8 @@
                     <el-button type="info" @click="modifyUser(scope.row)">修改</el-button>
 
                     <el-button type="info" @click="deleteUser(scope.row)">删除</el-button>
+
+                    <el-button type="info" @click="addParams(scope.row)">添加参数</el-button>
                 </template>
             </el-table-column>
             <!--编辑与增加的页面-->

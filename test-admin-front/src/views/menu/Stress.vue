@@ -1,30 +1,30 @@
 <template>
     <div class="stress">
-        <el-form :model="environmentForm" ref="environmentForm">              
-	<el-row :gutter="24" v-for="(item, index) in environmentForm.items" :key="item.key">
-		<el-col :span="6">                 
-			<el-form-item :prop="'items.' + index + '.name'" :rules="{required: true, message: '名称不能为空', trigger: 'blur'}">
-				<el-input v-model="item.name"></el-input>
-			</el-form-item>                  
-		</el-col>              
-		<el-col :span="6">                  
-			<el-form-item :prop="'items.' + index + '.variable'" :rules="{required: true, message: '变量值不能为空', trigger: 'blur'}">
-				<el-input v-model="item.variable"></el-input>
-			</el-form-item>                  
-		</el-col>
-		<el-col :span="6">
-			<el-form-item :prop="'items.' + index + '.description'" :rules="{required: true, message: '描述不能为空', trigger: 'blur'}">
-				<el-input type="textarea" :rows="1" v-model="item.description"></el-input>
-			</el-form-item>
-		</el-col>
-		<el-col :span="3" v-if="environmentForm.items.length !== 1">
-			<i @click="removeEnvironmentForm(item)" style="font-size:28px;cursor:pointer;" class="el-icon-delete"></i>
-		</el-col>
-		<el-col :span="3" >
-			<el-button @click="addEnvironmentForm" size="mini" class="el-icon-plus"></el-button>
-		</el-col>
-	</el-row>               
-
+        <el-form :model="environmentForm" ref="environmentForm">   
+			           
+			<el-row :gutter="24" v-for="(item, index) in environmentForm.items" :key="item.key">
+				<el-col :span="6">                 
+					<el-form-item :prop="'items.' + index + '.name'" :rules="{required: true, message: '名称不能为空', trigger: 'blur'}">
+						<el-input v-model="item.name" placeholder="variable"></el-input>
+					</el-form-item>                  
+				</el-col>              
+				<el-col :span="6">                  
+					<el-form-item :prop="'items.' + index + '.params'" :rules="{required: true, message: '參數不能为空', trigger: 'blur'}">
+						<el-input v-model="item.params" placeholder="params"></el-input>
+					</el-form-item>                  
+				</el-col>
+				<el-col :span="6">
+					<el-form-item :prop="'items.' + index + '.api_code'" :rules="{required: true, message: 'api_code不能为空', trigger: 'blur'}">
+						<el-input v-model="item.api_code" placeholder="api_code"></el-input>
+					</el-form-item>
+				</el-col>
+				<el-col :span="3" v-if="environmentForm.items.length !== 1">
+					<i @click="removeEnvironmentForm(item)" style="font-size:28px;cursor:pointer;" class="el-icon-delete"></i>
+				</el-col>
+				<el-col :span="3" >
+					<el-button @click="addEnvironmentForm" size="mini" class="el-icon-plus"></el-button>
+				</el-col>
+			</el-row>               
 	<el-form-item>
 		<el-button type="primary" @click="submitForm()">提交</el-button>                
 		<el-button @click="resetForm()">重置</el-button>
@@ -41,8 +41,8 @@ export default {
 			environmentForm: {
 				items: [{
 					name: '',
-					variable: '',
-					description: ''
+					params: '',
+					api_code: ''
 				}]
 			}
 		}
@@ -52,7 +52,11 @@ export default {
 		submitForm() {
 			this.$axios.post('/stress',{
                 items: this.environmentForm.items
-            })
+            }).then(response=>{
+				if(response.data.code === 200){
+					Object.assign(this.$data,this.$options.data())
+				}
+			})
 		},
 		//重置事件
 		resetForm() {
@@ -69,8 +73,8 @@ export default {
 		addEnvironmentForm() {
 			this.environmentForm.items.push({
 				name: '',
-				variable: '',
-				description: ''
+				params: '',
+				api_code: ''
 			});
 		}
 	}

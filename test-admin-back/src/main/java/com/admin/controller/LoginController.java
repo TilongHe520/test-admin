@@ -56,11 +56,7 @@ public class LoginController {
     @RequestMapping(value = "/api/user/userList")
     @CrossOrigin
     public CommonResult getUserInfo(){
-        List<UserInfo> userInfos = new ArrayList<>();
-        userInfos.add(new UserInfo("xiaowang1","123456"));
-        userInfos.add(new UserInfo("xiaowang2","123456"));
-        userInfos.add(new UserInfo("xiaowang3","123456"));
-        userInfos.add(new UserInfo("xiaowang4","123456"));
+        List<UserInfo> userInfos = userService.findAll();
         return CommonResult.success(userInfos);
     }
 }
