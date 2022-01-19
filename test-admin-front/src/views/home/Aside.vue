@@ -52,6 +52,16 @@
                         <i class="el-icon-s-home"></i>
                         <span slot="title">实用小工具</span>
                     </el-menu-item>
+
+                    <el-menu-item index="json" @click="$router.push({name:'JsonTest'})">
+                        <i class="el-icon-s-home"></i>
+                        <span slot="title">jsonTest</span>
+                    </el-menu-item>
+
+                    <el-menu-item index="interfaceReq" @click="$router.push({name:'InterfaceRequest'})">
+                        <i class="el-icon-s-home"></i>
+                        <span slot="title">模拟接口请求</span>
+                    </el-menu-item>
                 </el-menu>
             </el-scrollbar>
         </el-aside>

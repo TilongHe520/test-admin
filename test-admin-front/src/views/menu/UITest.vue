@@ -1,5 +1,6 @@
 <template>
     <div class="ui">
+        <div>
         <el-form :model="UIDataForm" 
         :rules="UIDataRule"
         ref="UIDataForm"
@@ -22,6 +23,16 @@
                  @click="UIDataFormSubmit()">提交</el-button>
             </el-form-item>
         </el-form>
+        </div>
+        <div class="test-json-viewer">
+            <json-viewer
+                :value="jsonData"
+                :expand-depth="5"
+                copyable
+                boxed
+                sort
+            ></json-viewer>
+        </div>
     </div>
 </template>
 
@@ -33,7 +44,8 @@
                 UIDataForm:{
                     description:'',
                     xpath:''
-                }
+                },
+                jsonData:[]
             }
         },
         methods:{
@@ -46,8 +58,7 @@
                         xpath: this.UIDataForm.xpath
                     }).then(successResponse =>{
                         if (successResponse.data.code === 200) {
-                            this.demo(),
-                            this.$router.replace({name: 'Home'})
+                            this.jsonData = JSON.parse(successResponse.data.data.xpath)
                         }
                     }).catch(failResponse => {
                     })

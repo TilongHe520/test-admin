@@ -16,10 +16,10 @@ public class RequestURLInfo {
     private List<RequestParamsInfo> paramsInfo;
 
     public RequestURLInfo(String apiCode, String secondUrL, String secondUrlParams,
-                          String requestMethod, String remark,List<RequestParamsInfo> paramsInfo){
+                          String requestMethod, String remark, List<RequestParamsInfo> paramsInfo) {
         this.apiCode = apiCode;
         this.secondUrL = secondUrL;
-        this.secondUrlParams =secondUrlParams;
+        this.secondUrlParams = secondUrlParams;
         this.requestMethod = requestMethod;
         this.remark = remark;
         this.paramsInfo = paramsInfo;

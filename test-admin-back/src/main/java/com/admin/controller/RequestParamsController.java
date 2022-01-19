@@ -19,16 +19,16 @@ public class RequestParamsController {
     private RequestParamsService requestParamsService;
 
     @GetMapping(value = "/api/batchInsert")
-    public CommonResult batchInsert(){
+    public CommonResult batchInsert() {
         List<RequestParamsInfo> paramsInfos = new ArrayList<>();
-        paramsInfos.add(new RequestParamsInfo("ad","A","a"));
-        paramsInfos.add(new RequestParamsInfo("ad1","A1","a"));
-        paramsInfos.add(new RequestParamsInfo("ad2","A2","a"));
+        paramsInfos.add(new RequestParamsInfo("ad", "A", "a"));
+        paramsInfos.add(new RequestParamsInfo("ad1", "A1", "a"));
+        paramsInfos.add(new RequestParamsInfo("ad2", "A2", "a"));
 
         int a = requestParamsService.batchInsert(paramsInfos);
-        if(a>0){
+        if (a > 0) {
             return CommonResult.success(a, "插入成功");
-        }else {
+        } else {
             return CommonResult.success(paramsInfos, "插入失败");
         }
 

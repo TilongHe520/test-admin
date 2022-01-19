@@ -15,7 +15,7 @@ public class RequestParamsInfo {
     private String requestParams;
     private String apiCode;
 
-    public RequestParamsInfo(String requestVariable, String requestParams, String apiCode){
+    public RequestParamsInfo(String requestVariable, String requestParams, String apiCode) {
         this.apiCode = apiCode;
         this.requestParams = requestParams;
         this.requestVariable = requestVariable;

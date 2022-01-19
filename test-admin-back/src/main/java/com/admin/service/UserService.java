@@ -13,11 +13,11 @@ public class UserService {
     @Autowired
     UserMapper userMapper;
 
-    public UserInfo findByUsername(String username){
+    public UserInfo findByUsername(String username) {
         return userMapper.findByUsername(username);
     }
 
-    public List<UserInfo> findAll(){
+    public List<UserInfo> findAll() {
         return userMapper.findAll();
     }
 }

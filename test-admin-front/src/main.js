@@ -5,9 +5,11 @@ import App from './App'
 import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import JsonViewer from "vue-json-viewer"
 
 
 Vue.use(ElementUI)
+Vue.use(JsonViewer)
 
 Vue.config.productionTip = false
 
@@ -21,6 +23,6 @@ axios.defaults.baseURL = 'http://localhost:8080/api'
 new Vue({
   el: '#app',
   router,
-  components: { App },
+  components: {App},
   template: '<App/>'
 })

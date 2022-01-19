@@ -13,7 +13,7 @@ public class RequestParamsService {
     @Autowired
     RequestParamsMapper requestParamsMapper;
 
-    public int batchInsert(List<RequestParamsInfo> infoList){
+    public int batchInsert(List<RequestParamsInfo> infoList) {
         return requestParamsMapper.insertRequestParamsInfo(infoList);
     }
 

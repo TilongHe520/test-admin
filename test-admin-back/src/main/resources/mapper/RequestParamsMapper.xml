@@ -4,9 +4,9 @@
 
     <resultMap id="BaseResultMap" type="com.admin.pojo.RequestParamsInfo">
 
-        <id column="id" property="id" />
-        <result column="request_variable" property="requestVariable" />
-        <result column="request_params" property="requestParams" />
+        <id column="id" property="id"/>
+        <result column="request_variable" property="requestVariable"/>
+        <result column="request_params" property="requestParams"/>
         <result column="api_code" property="apiCode"/>
 
     </resultMap>
