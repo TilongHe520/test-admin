@@ -63,6 +63,11 @@ const routes = [
         path: '/Home/InterfaceRes',
         name: 'InterfaceRequest',
         component: () => import('@/views/menu/InterfaceRequest.vue')
+      },
+      {
+        path: '/Home/InterfaceCol',
+        name: 'InterfaceCollection',
+        component: () => import('@/views/menu/InterfaceCollection.vue')
       }
     ]
   },

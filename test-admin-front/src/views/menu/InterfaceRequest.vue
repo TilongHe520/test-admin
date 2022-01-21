@@ -7,7 +7,7 @@
                 @keyup.enter.native="curlDataSubmit()"
                 status-icon="">
                 <el-form-item prop="description" style="text-align:left" >
-                    <el-input v-model="curlData" type="textarea" :rows="8"
+                    <el-input v-model="curlData" type="textarea" :rows="10"
                     placeholder="请输入curl" ></el-input>
                 </el-form-item>
                 <el-form-item>

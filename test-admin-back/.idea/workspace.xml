@@ -20,46 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c4ef4da-a0eb-4f70-a072-e656bd15af3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/admin/controller/InterfaceResController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/admin/pojo/CurlParams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/admin/service/InterfaceResService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/admin/util/ResolveCurl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/admin/studyJmeter/JmeterFileSetUp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/admin/studyJmeter/demo/DemoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/admin/studyJmeter/pojo/CsvDataSetInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/admin/studyJmeter/pojo/HeaderManagerInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/admin/studyJmeter/pojo/HttpRequestInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/admin/studyJmeter/pojo/RegexExtractorInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/admin/studyJmeter/pojo/TestPlanInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/admin/studyJmeter/pojo/ThreadGroupInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/admin/common/IErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/admin/common/IErrorCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/admin/common/ResultCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/admin/common/ResultCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/admin/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/admin/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/admin/controller/RequestParamsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/admin/controller/RequestParamsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/admin/pojo/RequestParamsInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/admin/pojo/RequestParamsInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/admin/pojo/RequestURLInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/admin/pojo/RequestURLInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/admin/service/RequestParamsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/admin/service/RequestParamsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/admin/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/admin/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2_springboot.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2_springboot.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/RequestParamsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/RequestParamsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/admin/common/ResultCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/admin/common/ResultCode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/log4j2_springboot.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j2_springboot.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/RequestParamsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/RequestParamsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test-admin-front/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin-front/.babelrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test-admin-front/build/check-versions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin-front/build/check-versions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test-admin-front/build/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin-front/build/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test-admin-front/build/webpack.base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin-front/build/webpack.base.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test-admin-front/build/webpack.dev.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin-front/build/webpack.dev.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test-admin-front/build/webpack.prod.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin-front/build/webpack.prod.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test-admin-front/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin-front/config/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test-admin-front/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin-front/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test-admin-front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin-front/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test-admin-front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin-front/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test-admin-front/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin-front/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test-admin-front/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin-front/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test-admin-front/src/views/home/Aside.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin-front/src/views/home/Aside.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test-admin-front/src/views/menu/UITest.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin-front/src/views/menu/UITest.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test-admin-front/src/views/menu/Ueditor.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin-front/src/views/menu/Ueditor.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test-admin-front/test/e2e/runner.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin-front/test/e2e/runner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test-admin-front/test/unit/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin-front/test/unit/.eslintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-admin-front/src/views/menu/InterfaceCollection.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin-front/src/views/menu/InterfaceCollection.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +65,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/admin" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2816092" />
@@ -98,10 +73,24 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/admin" />
       <recent name="D:\develop\test-admin\test-admin-back\src\main\resources\mapper" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.App">
+    <configuration name="DemoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.admin.studyJmeter.demo.DemoTest" />
+      <module name="test-admin-back" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.admin.studyJmeter.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="InterfaceResService.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test-admin-back" />
       <extension name="coverage">
@@ -134,6 +123,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.App" />
+        <item itemvalue="Application.DemoTest" />
         <item itemvalue="JUnit.InterfaceResService.test01" />
       </list>
     </recent_temporary>
@@ -175,6 +165,10 @@
       <workItem from="1642486702062" duration="98000" />
       <workItem from="1642496955713" duration="1583000" />
       <workItem from="1642568648313" duration="808000" />
+      <workItem from="1642650403888" duration="401000" />
+      <workItem from="1642658906518" duration="783000" />
+      <workItem from="1642668705029" duration="762000" />
+      <workItem from="1642672513261" duration="279000" />
     </task>
     <servers />
   </component>
@@ -198,52 +192,52 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1641180718071" />
-    <state width="1396" height="428" key="GridCell.Tab.0.bottom" timestamp="1642569823343">
+    <state width="1396" height="2" key="GridCell.Tab.0.bottom" timestamp="1642672823359">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="428" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1642569823343" />
+    <state width="1396" height="2" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1642672823359" />
     <state width="1396" height="363" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1641193274460" />
     <state width="1396" height="261" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.23.1920.1057@0.23.1440.877" timestamp="1642497393201" />
-    <state width="1396" height="428" key="GridCell.Tab.0.center" timestamp="1642569823341">
+    <state width="1396" height="2" key="GridCell.Tab.0.center" timestamp="1642672823358">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="428" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1642569823341" />
+    <state width="1396" height="2" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1642672823358" />
     <state width="1396" height="363" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1641193274459" />
     <state width="1396" height="261" key="GridCell.Tab.0.center/0.23.1440.877/1440.23.1920.1057@0.23.1440.877" timestamp="1642497393199" />
-    <state width="1396" height="428" key="GridCell.Tab.0.left" timestamp="1642569823340">
+    <state width="1396" height="2" key="GridCell.Tab.0.left" timestamp="1642672823357">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="428" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1642569823340" />
+    <state width="1396" height="2" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1642672823357" />
     <state width="1396" height="363" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1641193274458" />
     <state width="1396" height="261" key="GridCell.Tab.0.left/0.23.1440.877/1440.23.1920.1057@0.23.1440.877" timestamp="1642497393197" />
-    <state width="1396" height="428" key="GridCell.Tab.0.right" timestamp="1642569823342">
+    <state width="1396" height="2" key="GridCell.Tab.0.right" timestamp="1642672823359">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="428" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1642569823342" />
+    <state width="1396" height="2" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1642672823359" />
     <state width="1396" height="363" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1641193274459" />
     <state width="1396" height="261" key="GridCell.Tab.0.right/0.23.1440.877/1440.23.1920.1057@0.23.1440.877" timestamp="1642497393200" />
-    <state width="1396" height="428" key="GridCell.Tab.1.bottom" timestamp="1642569823345">
+    <state width="1396" height="2" key="GridCell.Tab.1.bottom" timestamp="1642672823363">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="428" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1642569823345" />
+    <state width="1396" height="2" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1642672823363" />
     <state width="1396" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1641184220252" />
     <state width="1396" height="304" key="GridCell.Tab.1.bottom/0.23.1440.877/1440.23.1920.1057@0.23.1440.877" timestamp="1642497906091" />
-    <state width="1396" height="428" key="GridCell.Tab.1.center" timestamp="1642569823344">
+    <state width="1396" height="2" key="GridCell.Tab.1.center" timestamp="1642672823361">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="428" key="GridCell.Tab.1.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1642569823344" />
+    <state width="1396" height="2" key="GridCell.Tab.1.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1642672823361" />
     <state width="1396" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1641184220251" />
     <state width="1396" height="304" key="GridCell.Tab.1.center/0.23.1440.877/1440.23.1920.1057@0.23.1440.877" timestamp="1642497906090" />
-    <state width="1396" height="428" key="GridCell.Tab.1.left" timestamp="1642569823343">
+    <state width="1396" height="2" key="GridCell.Tab.1.left" timestamp="1642672823360">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="428" key="GridCell.Tab.1.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1642569823343" />
+    <state width="1396" height="2" key="GridCell.Tab.1.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1642672823360" />
     <state width="1396" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1641184220251" />
     <state width="1396" height="304" key="GridCell.Tab.1.left/0.23.1440.877/1440.23.1920.1057@0.23.1440.877" timestamp="1642497906090" />
-    <state width="1396" height="428" key="GridCell.Tab.1.right" timestamp="1642569823345">
+    <state width="1396" height="2" key="GridCell.Tab.1.right" timestamp="1642672823362">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="428" key="GridCell.Tab.1.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1642569823345" />
+    <state width="1396" height="2" key="GridCell.Tab.1.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1642672823362" />
     <state width="1396" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1641184220252" />
     <state width="1396" height="304" key="GridCell.Tab.1.right/0.23.1440.877/1440.23.1920.1057@0.23.1440.877" timestamp="1642497906091" />
     <state width="1396" height="223" key="GridCell.Tab.2.bottom" timestamp="1642499031800">

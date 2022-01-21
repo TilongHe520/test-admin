@@ -44,7 +44,7 @@
                         <i class="el-icon-s-home"></i>
                         <span slot="title">压力测试</span>
                     </el-menu-item>
-                    <el-menu-item index="case">
+                    <el-menu-item index="case" @click="$router.push({name:'InterfaceCollection'})">
                         <i class="el-icon-s-home"></i>
                         <span slot="title">用例管理</span>
                     </el-menu-item>
