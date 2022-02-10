@@ -19,23 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c4ef4da-a0eb-4f70-a072-e656bd15af3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/admin/studyJmeter/JmeterFileSetUp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/admin/studyJmeter/demo/DemoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/admin/studyJmeter/pojo/CsvDataSetInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/admin/studyJmeter/pojo/HeaderManagerInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/admin/studyJmeter/pojo/HttpRequestInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/admin/studyJmeter/pojo/RegexExtractorInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/admin/studyJmeter/pojo/TestPlanInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/admin/studyJmeter/pojo/ThreadGroupInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2_springboot.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2_springboot.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j2_springboot.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j2_springboot.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test-admin-front/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin-front/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test-admin-front/src/views/home/Aside.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin-front/src/views/home/Aside.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test-admin-front/src/views/menu/InterfaceCollection.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../test-admin-front/src/views/menu/InterfaceCollection.vue" afterDir="false" />
-    </list>
+    <list default="true" id="2c4ef4da-a0eb-4f70-a072-e656bd15af3b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -169,6 +153,7 @@
       <workItem from="1642658906518" duration="783000" />
       <workItem from="1642668705029" duration="762000" />
       <workItem from="1642672513261" duration="279000" />
+      <workItem from="1644493135822" duration="44000" />
     </task>
     <servers />
   </component>
